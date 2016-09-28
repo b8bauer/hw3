@@ -6,16 +6,18 @@ function setup() {
 function draw() {
 	var x = 50;
 	var y = 100;
+	rectMode(CENTER);
+
 	
-	for (var repeat = 0; repeat <= 5; repeat++){
-		var z = 50;
-	for (var boxes = 0; boxes < 4; boxes++){
-		noFill();
-		rectMode(CENTER);
-		rect(x,y,z,z);
-		z = z - 15;
+	for (var repeat = 0; repeat <= 4; repeat++){
+		var z = 80;
+		
+		for (var boxes = 0; boxes < 4; boxes++){
+			noFill();
+			rect(x,y,z,z);
+			z = z - 20;
 	}
-	x = x + 70;
+	x = x + 100;
 	}
 	
 }
